@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    a:visited {
+      color: red;
+      text-decoration: none;
+    }
+    a:hover {
+      color: green;
+      text-decoration: none;
+    }
+  </style>
+
+  <body>
+    <a href="">点击后失效</a>
+    <input type="text" id="text">
+  </body>
+</html>
+
+<script>
+  const text = document.getElementById("text");
+  text.onclick = function (e) {
+    console.log("onclick");
+  };
+  text.onfocus = function (e) {
+    console.log("onfocus");
+  };
+  text.onmousedown = function (e) {
+    console.log("onmousedown");
+  };
+  text.onmouseenter = function (e) {
+    console.log("onmouseenter");
+  };
+</script>
